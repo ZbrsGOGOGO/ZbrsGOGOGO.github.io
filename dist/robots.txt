@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zbrsgogogo.github.io/sitemap.xml
