@@ -29,7 +29,7 @@ python3 -m http.server 4173 --directory dist
 3. 在仓库 **Settings → Pages** 中将 Source 设为 **GitHub Actions**。
 4. `Deploy GitHub Pages` 工作流完成后，访问 `https://zbrsgogogo.github.io/`。
 
-部署工作流会直接发布 `dist/`，不需要 `gh-pages` 分支。
+部署工作流直接发布 `dist/`，不需要 `gh-pages` 分支。仓库根目录保留同一份发布快照，让从 `main` 根目录发布时也显示完整主页。更新 `dist/` 下的发布文件后，请同步覆盖根目录的对应文件。
 
 ## License
 
