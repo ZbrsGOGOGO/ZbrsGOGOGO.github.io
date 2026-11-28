@@ -1,18 +1,14 @@
 {
-  "name": "borui zhang · AI × Robotics Builder",
-  "short_name": "borui zhang",
-  "description": "borui zhang 的 GitHub 个人主页：机器人系统、AI Agent、交互产品与开源工程。",
+  "name": "张博锐 · 机器人系统软件",
+  "short_name": "张博锐",
+  "description": "遥操作与示范数据 SDK、公开协作项目和工程文档。",
+  "lang": "zh-CN",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f4f1e8",
-  "theme_color": "#111512",
+  "background_color": "#fcfcf9",
+  "theme_color": "#fcfcf9",
   "icons": [
-    {
-      "src": "assets/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }

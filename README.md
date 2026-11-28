@@ -1,36 +1,23 @@
-# borui zhang · GitHub 个人主页
+# 张博锐的公开工程索引
 
-面向 `https://zbrsgogogo.github.io/` 的纯静态个人主页，聚焦机器人系统、AI Agent、交互产品与开源工程。
+个人主页收录机器人遥操作与示范数据 SDK 的代码、离线演示、数据格式和测试，并列出相关公开协作仓库。[访问工程索引](https://zbrsgogogo.github.io/)
 
-## 本地预览
+## 本地查看
 
-无需安装依赖或执行构建：
+从仓库根目录启动静态文件服务。
 
 ```bash
 python3 -m http.server 4173 --directory dist
 ```
 
-然后访问 `http://localhost:4173/`。
+打开 <http://localhost:4173/>。中文版和项目链接可直接从 HTML 访问，页面顶部可以切换中英文，浏览器会记住语言设置。
 
-## 内容维护
+## 更新和部署
 
-- 个人资料、统计、方向与项目：`dist/assets/app.js`
-- 页面结构与搜索元数据：`dist/index.html`
-- 视觉与响应式布局：`dist/assets/styles.css`
-- 机器人主视觉：`dist/assets/robot-builder.png`
-- 社交分享封面：`dist/assets/og-cover.png`
+- 在 `dist/index.html` 中维护项目、链接和双语文案。默认中文，英文放在对应元素的 `data-en` 属性中。
+- 页面样式与语言切换分别位于 `dist/assets/styles.css`、`dist/assets/app.js`。
+- 修改发布文件后，同步更新根目录同名文件及 `assets/` 中的对应文件，以兼容从仓库根目录托管。
 
-页面不依赖框架和运行时 API；修改后刷新浏览器即可查看结果。公开统计应与 GitHub 上可验证的信息保持一致。
+推送至 `main` 后，GitHub Actions 使用 [Pages 工作流](.github/workflows/pages.yml) 发布 `dist/`。站点无需构建步骤。
 
-## 部署到 GitHub Pages
-
-1. 在 `ZbrsGOGOGO` 账号下创建公开仓库 `ZbrsGOGOGO.github.io`。
-2. 将本目录推送到仓库的 `main` 分支。
-3. 在仓库 **Settings → Pages** 中将 Source 设为 **GitHub Actions**。
-4. `Deploy GitHub Pages` 工作流完成后，访问 `https://zbrsgogogo.github.io/`。
-
-部署工作流直接发布 `dist/`，不需要 `gh-pages` 分支。仓库根目录保留同一份发布快照，让从 `main` 根目录发布时也显示完整主页。更新 `dist/` 下的发布文件后，请同步覆盖根目录的对应文件。
-
-## License
-
-[MIT](LICENSE)
+[MIT 许可协议](LICENSE)

@@ -1,240 +1,83 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="system">
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="borui zhang 的 GitHub 个人主页：机器人系统、AI Agent、交互产品与开源工程。" />
-    <meta name="author" content="borui zhang" />
-    <meta name="keywords" content="borui zhang,ZbrsGOGOGO,robotics,AI agent,open source,GitHub" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#101216" />
-    <link rel="canonical" href="https://zbrsgogogo.github.io/" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content="borui zhang · AI × Robotics Builder" />
-    <meta property="og:description" content="机器人系统、AI Agent、交互产品与开源工程。" />
-    <meta property="og:url" content="https://zbrsgogogo.github.io/" />
-    <meta property="og:image" content="https://zbrsgogogo.github.io/assets/og-cover.png" />
-    <meta property="og:image:width" content="1536" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:image:alt" content="原创 AI 机器人与开源工程轨道构成的个人主页主视觉" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="borui zhang · AI × Robotics Builder" />
-    <meta name="twitter:description" content="机器人系统、AI Agent、交互产品与开源工程。" />
-    <meta name="twitter:image" content="https://zbrsgogogo.github.io/assets/og-cover.png" />
-    <meta name="twitter:image:alt" content="原创 AI 机器人与开源工程轨道构成的个人主页主视觉" />
-    <title>borui zhang · AI × Robotics Builder</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="assets/styles.css" />
-    <script src="assets/app.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "borui zhang",
-        "alternateName": "ZbrsGOGOGO",
-        "url": "https://zbrsgogogo.github.io/",
-        "image": "https://avatars.githubusercontent.com/u/52768195?v=4",
-        "sameAs": ["https://github.com/ZbrsGOGOGO"],
-        "knowsAbout": ["Robotics", "AI Agents", "Data Pipelines", "TypeScript", "Python"]
-      }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="张博锐">
+    <meta name="description" content="张博锐的机器人系统软件工程索引，收录遥操作 SDK 的源码、离线演示、数据校验测试与公开协作项目。">
+    <meta name="theme-color" content="#fcfcf9">
+    <link rel="canonical" href="https://zbrsgogogo.github.io/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://zbrsgogogo.github.io/">
+    <meta property="og:title" content="张博锐 · 机器人系统软件">
+    <meta property="og:description" content="遥操作与示范数据 SDK 的源码、离线模拟、数据格式和公开协作项目。">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="张博锐 · 机器人系统软件">
+    <meta name="twitter:description" content="遥操作与示范数据 SDK 的源码、离线模拟、数据格式和公开协作项目。">
+    <title>张博锐 · 机器人系统软件</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/app.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到正文</a>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
-
-    <header class="site-header" data-header>
-      <div class="header-inner">
-        <a class="brand" href="#top" aria-label="回到首页">
-          <span class="brand-mark" aria-hidden="true">BZ</span>
-          <span data-profile="handle">ZbrsGOGOGO</span>
-          <span class="brand-slash">/GH</span>
-        </a>
-
-        <nav class="primary-nav" aria-label="主导航">
-          <a href="#about" data-i18n="navAbout">关于</a>
-          <a href="#focus" data-i18n="navFocus">方向</a>
-          <a href="#work" data-i18n="navWork">项目</a>
-          <a href="#method" data-i18n="navMethod">方法</a>
-          <a href="#contact" data-i18n="navContact">联系</a>
-        </nav>
-
-        <div class="display-controls" aria-label="显示设置">
-          <button class="control-button language-button" type="button" data-language aria-label="切换语言">
-            EN
-          </button>
-          <button class="control-button" type="button" data-font="down" aria-label="减小字号">A−</button>
-          <button class="control-button" type="button" data-font="up" aria-label="增大字号">A+</button>
-          <label class="theme-picker">
-            <span class="sr-only">选择主题</span>
-            <select data-theme-picker aria-label="选择主题">
-              <option value="system">跟随系统</option>
-              <option value="light">晨光</option>
-              <option value="paper">纸张</option>
-              <option value="moss">苔绿</option>
-              <option value="dark">深夜</option>
-            </select>
-          </label>
-        </div>
-      </div>
+    <a class="skip" href="#main" data-en="Skip to content">跳到正文</a>
+    <header id="top" class="wrap topbar">
+      <a class="handle" href="https://github.com/ZbrsGOGOGO" lang="en">@ZbrsGOGOGO</a>
+      <nav aria-label="主导航" data-en-label="Navigation">
+        <a href="#work" data-en="Projects">工程项目</a>
+        <a href="#collaboration" data-en="Collaboration">协作项目</a>
+        <button type="button" data-language hidden lang="en" aria-label="Switch to English">English</button>
+      </nav>
     </header>
-
-    <main id="main">
-      <section class="hero page-shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">
-            <span class="signal-dot" aria-hidden="true"></span>
-            <span data-i18n="heroEyebrow">独立构建者 · AI / ROBOTICS / TOOLS</span>
-          </p>
-          <h1 id="hero-title" data-profile="name">borui zhang</h1>
-          <p class="hero-role gradient-text" data-i18n="heroRole">AI × Robotics Builder</p>
-          <p class="hero-lead" data-i18n="heroLead">
-            我关注 AI Agent、机器人数据闭环和工程工具。喜欢从真实问题出发，把模糊想法拆成清晰、可靠、能持续迭代的系统。
-          </p>
-          <p class="hero-translation" data-i18n="heroTranslation">
-            Turning complex intelligent systems into understandable, testable, and useful products.
-          </p>
-
-          <dl class="proof-stats" data-profile-list="stats" aria-label="GitHub 公开成果"></dl>
-
-          <div class="tag-list" data-profile-list="tags" aria-label="关注方向"></div>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work" data-i18n="viewWork">查看开源项目</a>
-            <a class="button button-secondary" href="https://github.com/ZbrsGOGOGO" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-
-          <div class="micro-proof">
-            <span class="status-beacon" aria-hidden="true"></span>
-            <span data-i18n="availability">3 个公开仓库 · Python / TypeScript / C#</span>
-          </div>
-        </div>
-
-        <div class="hero-canvas reveal" data-tilt aria-label="AI 与机器人开源工程主视觉">
-          <div class="canvas-topline">
-            <span>OPEN SOURCE / 2026</span>
-            <span class="canvas-status"><i aria-hidden="true"></i> BUILDING IN PUBLIC</span>
-          </div>
-          <div class="system-map" aria-hidden="true">
-            <div class="orbit orbit-a"></div>
-            <div class="orbit orbit-b"></div>
-            <img class="hero-robot" src="assets/robot-builder.png" alt="原创的白色与石墨色 AI 机器人，手持平板" width="1024" height="1536" />
-            <div class="map-node node-data"><span>01</span><strong>CONTROL</strong><small>authorize</small></div>
-            <div class="map-node node-model"><span>02</span><strong>DATA</strong><small>record</small></div>
-            <div class="map-node node-agent"><span>03</span><strong>AGENT</strong><small>reason</small></div>
-            <div class="map-node node-world"><span>04</span><strong>SHIP</strong><small>iterate</small></div>
-            <i class="pulse pulse-one"></i>
-            <i class="pulse pulse-two"></i>
-          </div>
-          <div class="canvas-footer">
-            <span>GITHUB <b>@ZbrsGOGOGO</b></span>
-            <span>FOCUS <b>AI × ROBOTICS</b></span>
+    <main id="main" class="wrap">
+      <header id="about" class="intro">
+        <h1 data-en="Borui Zhang">张博锐</h1>
+        <p id="focus" data-en="Robotics systems software. I work on teleoperation, robot simulation, and demonstration data.">机器人系统软件开发，主要做遥操作、机器人仿真与示范数据采集。</p>
+      </header>
+      <section id="work" class="chapter" aria-labelledby="project-title">
+        <h2 id="project-title" data-en="Open-source project">开源工程</h2>
+        <div class="details">
+          <h3 data-en="Teleoperation and demonstration data SDK">遥操作与示范数据 SDK</h3>
+          <a class="repo-path" href="https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform">ZbrsGOGOGO/robot-progressive-autonomy-platform</a>
+          <p data-en="The SDK manages control sessions and records operator intent, commands sent to the robot, and measured feedback as separate streams. Its Python simulators cover a dual-arm robot and a mobile base.">SDK 负责遥操作会话管理，将操作者意图、下发的指令和实测反馈分开记录。仓库自带双臂和移动底盘两种 Python 模拟器。</p>
+          <ul class="resources">
+            <li><a href="https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform/blob/main/sdk/rpa_sdk/runtime.py" data-en="Session runtime">会话控制源码</a></li>
+            <li><a href="https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform/blob/main/docs/data.md" data-en="Episode format and quality checks">数据格式与质检规则</a></li>
+            <li><a href="https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform/blob/main/tests/test_dataset.py" data-en="Dataset tests">数据验证测试</a></li>
+          </ul>
+          <div id="method" class="example">
+            <h4 data-en="Record a simulated episode">运行一次仿真录制</h4>
+            <p data-en="Run these commands with Python 3.9 or later on macOS or Linux. The demo writes one episode to episodes/.">在 macOS 或 Linux 上使用 Python 3.9 及以上版本执行以下命令，可在 episodes/ 下得到一条模拟示范轨迹。</p>
+            <pre aria-label="终端命令" data-en-label="Terminal commands"><code>git clone https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform.git
+cd robot-progressive-autonomy-platform
+PYTHONPATH=sdk python3 -m rpa_sdk demo --episodes ./episodes</code></pre>
           </div>
         </div>
       </section>
-
-      <section class="section page-shell" id="about" aria-labelledby="about-title">
-        <div class="section-heading reveal">
-          <p class="section-index">01 / ABOUT</p>
-          <h2 id="about-title" data-i18n="aboutTitle">从想法到真实世界</h2>
-        </div>
-        <div class="about-layout">
-          <p class="statement reveal" data-i18n="aboutStatement">
-            我对完整链路感兴趣：数据如何产生，模型如何学习，软件怎样可靠运行，以及人如何与智能工具一起把事情做好。
-          </p>
-          <div class="about-note reveal">
-            <span class="note-label">POINT OF VIEW</span>
-            <p data-i18n="aboutNote">
-              技术真正有价值的时刻，是它不再停留在演示里，而是进入真实流程，接受边界、失败与反馈。
-            </p>
-          </div>
-        </div>
-        <div class="principles" data-principles></div>
-      </section>
-
-      <section class="section focus-section" id="focus" aria-labelledby="focus-title">
-        <div class="page-shell">
-          <div class="section-heading reveal">
-            <p class="section-index">02 / FOCUS</p>
-            <h2 id="focus-title" data-i18n="focusTitle">三个持续投入的方向</h2>
-          </div>
-          <div class="focus-intro reveal">
-            <p data-i18n="focusIntro">
-              不追逐孤立的技术名词，更关心它们怎样组成一个能被理解、验证和维护的系统。
-            </p>
-            <span class="coordinate">BUILD / TEST / SHIP</span>
-          </div>
-          <div class="focus-track" data-focus-list></div>
+      <section id="collaboration" class="chapter" aria-labelledby="collab-title">
+        <h2 id="collab-title" data-en="Collaboration">协作项目</h2>
+        <div class="details">
+          <h3 data-en="Humanoid robot data pipeline">人形机器人数据管线</h3>
+          <a class="repo-path" href="https://github.com/wikieden/figure-data-pipeline">wikieden/figure-data-pipeline</a>
+          <p data-en="The project defines an episode schema for robot demonstrations, human video, wearable capture, and simulation. Its architecture documents describe the planned steps from capture and alignment to curation and export.">该项目定义了真机示范、人类视频、穿戴设备和仿真轨迹共用的 Episode 数据结构。架构文档描述了从采集、对齐到筛选和导出的管线设计。</p>
+          <ul class="resources">
+            <li><a href="https://github.com/wikieden/figure-data-pipeline/blob/main/src/fdp/schema.py" data-en="Episode schema">Episode 数据模型</a></li>
+            <li><a href="https://github.com/wikieden/figure-data-pipeline/blob/main/docs/architecture.md" data-en="Pipeline design">管线设计</a></li>
+          </ul>
         </div>
       </section>
-
-      <section class="section page-shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading reveal heading-with-aside">
-          <div>
-            <p class="section-index">03 / WORK</p>
-            <h2 id="work-title" data-i18n="workTitle">公开项目</h2>
-          </div>
-          <p data-i18n="workAside">只展示当前 GitHub 账号下可公开验证的项目与技术栈。</p>
-        </div>
-        <div class="project-grid" data-project-list></div>
-      </section>
-
-      <section class="section method-section" id="method" aria-labelledby="method-title">
-        <div class="page-shell method-layout">
-          <div class="method-copy reveal">
-            <p class="section-index">04 / METHOD</p>
-            <h2 id="method-title" data-i18n="methodTitle">先证明，再构建。</h2>
-            <p data-i18n="methodIntro">
-              我偏爱小步交付、清晰边界和可复现证据。复杂问题不需要神秘感，需要一个能持续缩小不确定性的过程。
-            </p>
-          </div>
-          <ol class="method-steps" data-method-list></ol>
-        </div>
-      </section>
-
-      <section class="section page-shell contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-card reveal">
-          <div>
-            <p class="section-index">05 / CONTACT</p>
-            <h2 id="contact-title" data-i18n="contactTitle">从一个公开问题开始。</h2>
-            <p data-i18n="contactBody">
-              欢迎通过 GitHub 查看代码、提出问题，或者围绕机器人遥操、数据闭环与交互产品展开交流。
-            </p>
-          </div>
-          <div class="contact-actions" data-contact-actions>
-            <a class="button button-primary" href="https://github.com/ZbrsGOGOGO" target="_blank" rel="noreferrer">GitHub / ZbrsGOGOGO</a>
-          </div>
-          <div class="contact-orbit" aria-hidden="true"><span></span><i></i></div>
-        </div>
+      <section class="chapter other" aria-labelledby="other-title">
+        <h2 id="other-title" data-en="Other work">其他工程</h2>
+        <ul class="other-list">
+          <li><a href="https://github.com/ZbrsGOGOGO/WebFishGogogo">WebFishGogogo</a><span data-en="An office social app with chat and shared tasks.">含聊天和协作任务的办公室轻社区。</span></li>
+          <li><a href="https://github.com/ZbrsGOGOGO/Zbrs">Zbrs</a><span data-en="An earlier C# mini-game for Douyin.">早期的 C# 抖音小游戏。</span></li>
+        </ul>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="page-shell footer-inner footer-grid">
-        <div class="footer-brand">
-          <strong data-profile="name">borui zhang</strong>
-          <p data-i18n="footerLine">保持好奇，持续构建。</p>
-        </div>
-        <div class="footer-column">
-          <span>Navigate</span>
-          <a href="#about" data-i18n="navAbout">关于</a>
-          <a href="#work" data-i18n="navWork">项目</a>
-          <a href="#method" data-i18n="navMethod">方法</a>
-        </div>
-        <div class="footer-column">
-          <span>Open source</span>
-          <a href="https://github.com/ZbrsGOGOGO/robot-progressive-autonomy-platform" target="_blank" rel="noreferrer">Robot autonomy</a>
-          <a href="https://github.com/ZbrsGOGOGO/WebFishGogogo" target="_blank" rel="noreferrer">WebFishGogogo</a>
-          <a href="https://github.com/ZbrsGOGOGO" target="_blank" rel="noreferrer">All repositories</a>
-        </div>
-        <div class="footer-column footer-end">
-          <span>© <span data-year></span></span>
-          <a href="#top" data-i18n="backTop">回到顶部</a>
-        </div>
-      </div>
+    <footer class="wrap" id="contact">
+      <a href="https://github.com/ZbrsGOGOGO" data-en="GitHub profile">GitHub 主页</a>
+      <a href="#top" data-en="Back to top">回到顶部</a>
     </footer>
-
-    <div class="toast" role="status" aria-live="polite" data-toast></div>
   </body>
 </html>
